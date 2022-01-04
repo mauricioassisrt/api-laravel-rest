@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cliente extends Model
 {
-//    use HasFactory;
+    //    use HasFactory;
 
     protected $fillable = [
         'nome',
@@ -19,7 +19,6 @@ class Cliente extends Model
     {
         return [
             'nome' => 'required',
-
             'cpf_cnpj' => 'required|unique:clientes'
         ];
     }
